@@ -63,4 +63,4 @@ gc.nexeron.online
 → Gestor de Coletores
 ```
 
-O card Controle de Ativos abre `https://cesa.nexeron.online`. O card Inventário permanece como “Em breve” e já possui `https://gc.nexeron.online` configurado para futura ativação.
+Os cards Controle de Ativos e Gestão de Coletores abrem, respectivamente, `https://cesa.nexeron.online` e `https://gc.nexeron.online/`.
