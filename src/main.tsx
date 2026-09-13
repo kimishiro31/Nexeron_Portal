@@ -25,7 +25,7 @@ const applications: ApplicationDefinition[] = [
   {
     id: 'inventario',
     shortcut: 2,
-    name: 'Inventário',
+    name: 'Gestão de Coletores',
     description: 'Organização e acompanhamento de coletores.',
     url: 'https://gc.nexeron.online',
     enabled: false,
@@ -83,7 +83,7 @@ function ApplicationCard({ application }: { application: ApplicationDefinition }
 }
 
 function ApplicationGrid() {
-  return <div className="application-list" aria-label="Aplicações disponíveis" role="list">{applications.map((application) => <ApplicationCard key={application.id} application={application} />)}{[3, 4].map((shortcut) => <div className="application-card application-card--placeholder" role="listitem" aria-disabled="true" key={shortcut}><span className="application-card__number">{shortcut}</span><span className="application-card__separator" aria-hidden="true" /><span className="application-card__placeholder-label">Nova aplicação</span><span className="application-card__arrow" aria-hidden="true">→</span></div>)}</div>;
+  return <div className="application-list" aria-label="Aplicações disponíveis" role="list">{applications.map((application) => <ApplicationCard key={application.id} application={application} />)}</div>;
 }
 
 function PortalArtwork() {
