@@ -27,8 +27,8 @@ const applications: ApplicationDefinition[] = [
     shortcut: 2,
     name: 'Gestão de Coletores',
     description: 'Organização e acompanhamento de coletores.',
-    url: 'https://gc.nexeron.online',
-    enabled: false,
+    url: 'https://gc.nexeron.online/',
+    enabled: true,
     category: 'Operação',
   },
 ];
