@@ -53,19 +53,17 @@ main::before { content: ''; position: fixed; z-index: -1; top: 0; right: -5vw; w
 .application-card--active { position: relative; color: #f4f4f1; background: rgba(16,16,15,.92); cursor: pointer; }
 .application-card--active:hover { transform: translateX(2px); border-color: var(--red); background: rgba(24,12,12,.95); box-shadow: 0 0 28px rgba(237,28,36,.09); }
 .application-card--active:hover::before, .application-card--active:focus-visible::before { opacity: 1; }
-.application-card--disabled, .application-card--placeholder { position: relative; color: #777773; background: rgba(13,13,12,.52); cursor: not-allowed; }
-.application-card--placeholder { color: #686864; background: rgba(10,10,10,.35); }
+.application-card--disabled { position: relative; color: #777773; background: rgba(13,13,12,.52); cursor: not-allowed; }
 .application-card__number { color: #777772; font-family: 'DM Mono', monospace; font-size: 21px; line-height: 1; text-align: center; }
 .application-card--active .application-card__number { color: var(--red-bright); }
 .application-card__separator { width: 1px; height: 27px; background: #454541; }
 .application-card--active .application-card__separator { background: rgba(237,28,36,.6); }
 .application-card__body { min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 0; }
 .application-card__category { display: none; }
-.application-card h2, .application-card__placeholder-label { color: inherit; font-size: clamp(17px, 1.55vw, 23px); line-height: 1.1; letter-spacing: -.035em; font-weight: 600; }
+.application-card h2 { color: inherit; font-size: clamp(17px, 1.55vw, 23px); line-height: 1.1; letter-spacing: -.035em; font-weight: 600; }
 .application-card__coming-soon { color: #5e5e5a; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
 .application-card__arrow { align-self: center; color: #777772; font-size: 24px; font-weight: 300; line-height: 1; }
 .application-card--disabled .application-card__arrow { color: #555550; }
-.application-card--placeholder .application-card__arrow { color: #4b4b47; }
 
 .portal-artwork { position: relative; height: 100%; min-height: 0; overflow: hidden; isolation: isolate; border: 0; background: radial-gradient(ellipse at 50% 46%, rgba(237,28,36,.18), transparent 47%), linear-gradient(135deg, rgba(29,8,9,.16), rgba(7,7,7,.3) 69%); }
 .portal-artwork::before { content: ''; position: absolute; inset: 0; background: linear-gradient(125deg, transparent 0 45%, rgba(237,28,36,.16) 45.2%, transparent 45.5%), linear-gradient(305deg, transparent 0 68%, rgba(237,28,36,.12) 68.2%, transparent 68.5%); pointer-events: none; }
@@ -117,7 +115,7 @@ main::before { content: ''; position: fixed; z-index: -1; top: 0; right: -5vw; w
   .application-card { grid-template-columns: 30px 1px minmax(0, 1fr) auto; gap: 12px; min-height: 68px; padding-right: 13px; padding-left: 13px; }
   .application-card__number { font-size: 17px; }
   .application-card__coming-soon { display: none; }
-  .application-card h2, .application-card__placeholder-label { font-size: 16px; }
+  .application-card h2 { font-size: 16px; }
   .application-card__arrow { font-size: 20px; }
 }
 
